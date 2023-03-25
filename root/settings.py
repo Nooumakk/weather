@@ -23,6 +23,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+
 
 # Application definition
 
@@ -33,7 +36,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'weather'
+    'weather',
+    'rest_framework',
+    'api'
 ]
 
 MIDDLEWARE = [
